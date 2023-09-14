@@ -1,0 +1,1 @@
+docker-compose run --entrypoint "npm install" node-watch

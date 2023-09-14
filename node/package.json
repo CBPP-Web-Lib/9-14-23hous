@@ -1,0 +1,25 @@
+{
+  "name": "9-14-23hous",
+  "version": "0.0.1",
+  "description": "Figs 3-5 for Mazerov migration paper",
+  "scripts": {},
+  "author": "Nick Kasprak",
+  "license": "MIT",
+  "dependencies": {
+    "core-js": "^3.6.5",
+    "d3": "^7.4.4",
+    "regenerator-runtime": "^0.13.7"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.1",
+    "@babel/preset-env": "^7.11.0",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^4.2.1",
+    "d3-color": "^1.4.1",
+    "dart-sass": "^1.25.0",
+    "raw-loader": "^4.0.1",
+    "sass": "^1.26.10",
+    "sass-loader": "^9.0.3",
+    "style-loader": "^1.2.1"
+  }
+}

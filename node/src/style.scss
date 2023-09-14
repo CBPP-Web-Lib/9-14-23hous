@@ -1,0 +1,133 @@
+#hous9-14-23 {
+    max-width:732px;
+    font-family: "proxima-nova",sans-serif;
+    border-top:1px solid #666;
+    border-bottom:1px solid #666;
+    position: relative;
+    margin-bottom:3em;
+    margin-top:3em;
+    .figure-label {
+        position:absolute;
+        bottom:100%;
+        text-transform: uppercase;
+    }
+    select, option {
+        font-family: "proxima-nova-condensed",sans-serif;
+        font-size:14pt;
+        color:#000;
+    }
+    h2 {
+        font-family: "proxima-nova",sans-serif;
+        font-size:24px;
+        line-height:1;
+        margin-bottom:0.5em;
+    }
+    h3 {
+        margin-top:0;
+        font-weight:400;
+        font-size:19px;
+        line-height:1;
+        margin-bottom:0;
+    }
+    .legend { 
+        position:absolute;
+        width:100%;
+        text-align: center;
+        font-family: "proxima-nova-condensed",sans-serif;
+        .legend-inner {
+            background-color:rgba(255, 255, 255, 0.9);
+            padding:10px;
+            display:inline-block;
+            text-align: left;
+        }
+        text-align:center;
+        .legend-item {
+            display:block; 
+            margin-right:20px;  
+            @media (max-width:832px) {
+                margin-right:10px;
+            }
+            &:last-child {
+                margin-right:0;
+            }
+        }
+        @media (max-width:832px) {
+            font-size:11pt;
+            line-height:13pt;
+            margin:10px;
+        }
+    }
+    .legend-item .legend-line {
+        width:20px;
+        height:20px;
+        display:inline-block;
+        overflow:none;
+        margin-right:5px;
+        position:relative;
+        top:-2px;
+        @media (max-width:832px) {
+            width:10px;
+            height:10px;
+        }
+    }
+    .figure-notes {
+        font-size:11pt;
+        line-height:1.2;
+        color:#666;
+        margin-top:1em;
+    }
+    .legend-item {
+        vertical-align: middle;
+        & > * {
+            vertical-align: middle;
+        }
+    } 
+    .figure-credit {
+        position:absolute;
+        top:100%;
+        width:100%;
+        margin-top:0.3em;
+        right:0px;
+        color:#666;
+        font-size:12pt;
+        line-height:1;
+        display:flex;
+        justify-content: space-between;
+        .source-code {
+            font-size:10pt;
+            a {
+                white-space:nowrap;
+            }
+        }
+        & > div {
+            a {
+                text-decoration: none;
+                &:hover {
+                    text-decoration: underline;
+                }   
+                &.cbpp-credit {
+                    a, a:visited {
+                        color:inherit;
+                    }
+                }
+            }
+        }
+    }
+    .chart-area {
+        margin-top:30px;
+    }
+    .chart-area > svg {
+        g.tick {
+            text {
+                font-size:7pt;
+                font-family: "proxima-nova-condensed",sans-serif;
+            }
+        }
+        .yaxis path.domain {display:none}
+        .yaxis .tick line {display:none}
+    }
+    .final_point_label {
+        font-size:8pt;
+        font-family: "proxima-nova-condensed",sans-serif;
+    }
+}
