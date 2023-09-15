@@ -5,7 +5,7 @@ const setup_svg = () => {
   const wrap = document.querySelectorAll("#" + id + " .chart-area")[0]
   const svg = d3_select(wrap).append("svg")
     .attr("viewBox", viewport.join(" "))
-
+  
   return svg
 
 }
